@@ -1,6 +1,11 @@
 <script>
+import AppMerchandise from './AppMerchandise.vue';
+
 export default {
     name: "AppContent",
+    components: {
+        AppMerchandise,
+    }
 }
 </script>
 
@@ -12,6 +17,7 @@ export default {
         </div>
 
     </div>
+    <AppMerchandise></AppMerchandise>
 </template>
 
 <style lang="scss">
