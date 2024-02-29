@@ -24,7 +24,7 @@ export default {
             <div class="nav-links">
 
                 <ul>
-                    <li v-for="activeLinks in links">
+                    <li v-for="activeLinks, index in links" :class="index == activeLinkIndex ? 'active' : ''">
                         {{ activeLinks }}
                     </li>
                 </ul>
@@ -43,7 +43,11 @@ nav {
 
     .nav-content {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         max-width: 1270px;
+        margin: auto;
+        padding: 20px;
     }
 
     .logo img {
@@ -55,6 +59,16 @@ nav {
         ul {
             list-style-type: none;
             display: flex;
+            gap: 30px;
+
+            li {
+                font-weight: bold;
+
+                &.active {
+                    color: #0282f9;
+                    border-bottom: 2px solid #0282f9;
+                }
+            }
         }
     }
 }
