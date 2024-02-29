@@ -37,6 +37,8 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/variables' as *;
+
 nav {
     background-color: white;
     color: black;
@@ -65,8 +67,8 @@ nav {
                 font-weight: bold;
 
                 &.active {
-                    color: #0282f9;
-                    border-bottom: 2px solid #0282f9;
+                    color: $primaryColor;
+                    border-bottom: 2px solid $primaryColor;
                 }
             }
         }

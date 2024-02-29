@@ -49,8 +49,10 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/variables' as *;
+
 .main-content-merchandise {
-    background-color: #0282f9;
+    background-color: $primaryColor;
 
     .merchandise-content {
         padding-top: 50px;

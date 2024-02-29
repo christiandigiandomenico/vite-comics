@@ -96,6 +96,8 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/variables' as *;
+
 .navbar-links {
     background-image: url(/img/footer-bg.jpg);
     background-size: cover;
@@ -146,7 +148,7 @@ export default {
     z-index: 99;
 
     button {
-        border: 1px solid #0282f9;
+        border: 1px solid $primaryColor;
         background-color: transparent;
         padding: 15px 20px;
     }
@@ -158,7 +160,7 @@ export default {
 
         span {
             font-size: 20px;
-            color: #0282f9;
+            color: $primaryColor;
             font-weight: bold;
         }
 
