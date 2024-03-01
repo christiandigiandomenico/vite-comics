@@ -20,13 +20,14 @@ export default {
     width: calc(100% / 6);
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 185px;
+        height: 185px;
     }
 
     h4 {
         font-size: 14px;
         font-weight: 400;
+        margin-bottom: 30px;
     }
 }
 </style>
